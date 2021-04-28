@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+ float: right;
+ margin-right: 20px;   
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+header {
+    max-width: 100%;
+	height: 350px;
+    position: fixed;
+    overflow: hidden;
+    background: url('../imagenes/farm-background-4997621_1920\ -\ copia.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.principal
+{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(100px);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+    cursor: pointer;
+}
+.principal .box
+{
+    background: mediumpurple;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: 0.5;
+}
+.principal .box:hover
+{
+    background: #e91e63;
+}
+.principal .box img
+{
+    position: relative;
+    max-width: 50%;
+    margin-bottom: 10px;
+    
+}
+.principal .box:nth-child(1)
+{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.principal .box:nth-child(8)
+{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+footer
+{
+    background: brown;
+    margin-top: 0px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/*.logo-escritorio
+{
+    width: 350px;
+    height: 106px;
+}
+.logo-movil
+{
+    width: 100px;
+    height: 62px;
+}*/
+@media (max-width: 992px)
+{
+    .principal
+    {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .principal
+    {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px;
+    }
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+    display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        z-index: 1;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a i{
+        margin-right: 10px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+/*
+@media only screen and (min-width: 43.8125em) {
+    .logo-movil
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 43.75em) {
+    .logo-escritorio
+    {
+        display:none;
+    }
+}
+
+*/
+@media (max-width: 700px)
+{
+    .encabezado 
+    {
+        height: 120px;   
+    }
+    
+}
+
+@media (max-width: 500px)
+{
+    .principal
+    {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 100px;
+    }
+    
+}
+
+
+
+
