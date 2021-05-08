@@ -14,13 +14,14 @@ nav{
     height: 80px;
     width: 100%;
 }
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+.logo img
+{
+    height: 80px;
+    object-fit: scale-down;
+   
+    
 }
+
 nav ul{
  float: right;
  margin-right: 20px;   
@@ -138,6 +139,10 @@ footer
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 100px;
     }
+    .logo img
+    {
+        width: 30%;
+    }
 }
 
 @media (max-width: 800px)
@@ -149,10 +154,7 @@ footer
     }
 }
 @media (max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
+  
     nav ul li a{
         font-size: 16px;
     }
@@ -190,23 +192,14 @@ footer
     #check:checked ~ ul{
         left: 0;
     }
-
-}
-/*
-@media only screen and (min-width: 43.8125em) {
-    .logo-movil
+    .logo img
     {
-        display: none;
+        width: 60%;
+        margin-left: 0;
     }
-}
-@media only screen and (max-width: 43.75em) {
-    .logo-escritorio
-    {
-        display:none;
-    }
+    
 }
 
-*/
 @media (max-width: 700px)
 {
     .encabezado 
@@ -225,7 +218,3 @@ footer
     }
     
 }
-
-
-
-
