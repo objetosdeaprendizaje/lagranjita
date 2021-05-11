@@ -14,6 +14,10 @@ nav{
     height: 70px;
     width: 100%;
 }
+.content img 
+{
+    width: 70%;
+}
 .logo img
 {
     height: 70px;
@@ -84,9 +88,8 @@ main {
 .principal .box
 {
     background: #F8D212;
-    padding: 20px;
+    padding: 0px;
     display: grid;
-    font-size: 20px;
     place-items: center;
     text-align: center;
     color: #fff;
@@ -97,11 +100,12 @@ main {
 {
     background: #e91e63;
 }
+
 .principal .box img
 {
     position: relative;
-    max-width: 50%;
-    margin-bottom: 10px;
+    max-width: 100%;
+    margin-bottom: 0px;
     
 }
 .principal .box:nth-child(1)
