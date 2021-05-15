@@ -20,7 +20,7 @@ nav{
 }
 .logo img
 {
-    height: 70px;
+    height: 70%;
     object-fit: scale-down;
     position: absolute;
     left: 30px;
