@@ -11,14 +11,15 @@ body{
 }
 nav{
     background: none;
-    height: 70px;
+    height: 80px;
     width: 100%;
 }
 .content img 
 {
     width: 70%;
 }
-label.logo{ color: red;
+label.logo{ 
+    color: red;
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
@@ -60,13 +61,11 @@ a.active, a:hover{
 header {
     max-width: 100%;
 	height: 350px;
-    position: fixed;
     overflow: hidden;
     background: url('../imagenes/farm-background-4997621_1920\ -\ copia.jpg') no-repeat center;
     background-size: cover;
     position: relative;
     cursor: pointer;
-   
 }
 main {
     margin-left: auto;
@@ -127,42 +126,11 @@ footer
     width: 100%;
     box-sizing: border-box;
 }
-/*.logo-escritorio
-{
-    width: 350px;
-    height: 106px;
-}
-.logo-movil
-{
-    width: 100px;
-    height: 62px;
-}*/
-@media (max-width: 992px)
-{
+@media (max-width:952px){
     label.logo{
         font-size: 30px;
         padding-left: 50px;
     }
-    nav ul li a{
-        font-size: 16px;
-    }
-    .principal
-    {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 100px;
-    }
-}
-
-@media (max-width: 800px)
-{
-    .principal
-    {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 100px;
-    }
-}
-@media (max-width: 952px){
-  
     nav ul li a{
         font-size: 16px;
     }
@@ -171,16 +139,16 @@ footer
     .checkbtn{
     display: block;
     }
-    ul{
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
         background: #B21C1C;
-        top: 55px;
+        top: 80px;
         left: -100%;
-        text-align: center;
-        z-index: 1;
+        text-align: center; 
         transition: all .5s;
+        z-index: 1;
     }
     nav ul li{
         display: block;
@@ -190,9 +158,6 @@ footer
     nav ul li a{
         font-size: 20px;
     }
-    nav ul li a i{
-        margin-right: 10px;
-    }
     a:hover,a.active{
         background: none;
         color: #0082e6;
@@ -200,31 +165,31 @@ footer
     #check:checked ~ ul{
         left: 0;
     }
-    nav{
-        background: #1b9bff;
-        height: 0px;
-    }
-    .logo img
-    {
-        width: 60%;
-        
-    }
-    label .logo
-    {
-        left: 10px;
-    }
-    
 }
 
+@media (max-width: 992px)
+{
+    .principal
+    {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px;
+    }
+}
+@media (max-width: 800px)
+{
+    .principal
+    {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px;
+    }
+}
 @media (max-width: 700px)
 {
     .encabezado 
     {
         height: 120px;   
     }
-    
 }
-
 @media (max-width: 500px)
 {
     .principal
@@ -232,8 +197,8 @@ footer
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 100px;
     }
-    .logo img 
-    {
-        width: 50%;
+    label.logo{
+        font-size: 25px;
+        padding-left: 30px;
     }
 }
