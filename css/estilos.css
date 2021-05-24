@@ -7,7 +7,7 @@
 }
 body{
     cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: 'Raleway', sans-serif;
 }
 nav{
     background: none;
@@ -18,12 +18,11 @@ nav{
 {
     width: 70%;
 }
-.logo img
-{
-    height: 70%;
-    object-fit: scale-down;
-    position: absolute;
-    left: 30px;
+label.logo{ color: red;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
 
 nav ul{
@@ -67,6 +66,7 @@ header {
     background-size: cover;
     position: relative;
     cursor: pointer;
+   
 }
 main {
     margin-left: auto;
@@ -139,6 +139,13 @@ footer
 }*/
 @media (max-width: 992px)
 {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
     .principal
     {
         grid-template-columns: repeat(3, 1fr);
