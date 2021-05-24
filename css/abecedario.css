@@ -149,16 +149,16 @@ a.active,a:hover{
         margin: auto;
     }
     .content-section .title{
-        font-size: 15px;
+        font-size: 12px;
     }
     .content-section .content h2{
-        font-size: 20px;
-    }
-    .content-section .content p{
         font-size: 15px;
     }
+    .content-section .content p{
+        font-size: 12px;
+    }
     .image-section img{
-        width: 50%;
+        width: 30%;
         height: auto;
         display: block;
         margin-left: auto;
