@@ -149,7 +149,20 @@ a.active,a:hover{
         margin: auto;
     }
     .content-section .title{
-        font-size: 19px;
+        font-size: 15px;
+    }
+    .content-section .content h2{
+        font-size: 20px;
+    }
+    .content-section .content p{
+        font-size: 15px;
+    }
+    .image-section img{
+        width: 50%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media (max-width: 500px){
