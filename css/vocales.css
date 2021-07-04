@@ -1,0 +1,269 @@
+
+@font-face {
+    font-family: "Releway-Bold";
+    src: url("../Fonts/Raleway-Bold.ttf") format("woff"),
+         url("../Fonts/Raleway-Bold.ttf") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: url("../imagenes/fondo27.fw.png") no-repeat center;
+
+}
+.button1{
+  background: rgb(78, 149, 241);
+  width: 230px;
+  height: 100px;
+  color: white;
+  border: 10px solid rgb(236, 253, 81);
+  border-radius: 40px;
+  box-shadow: 5px 5px rgb(240, 255, 32);
+  font-family: "Releway-Bold";
+  font-size: 50px;
+  margin-top: 50px;
+}
+.button2{
+  background: rgb(255, 255, 0);
+  border-radius: 50%;
+  border: 3px solid rgb(238, 59, 28);
+  color: white;
+  width: 80px;
+  height: 80px;
+  
+}
+#home{
+  background: rgb(53, 135, 243);
+  color: white;
+  border: 3px solid rgb(6, 171, 236);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.fas{
+  font-size: 50px;
+}
+.page-title {
+  color: rgb(20, 134, 241);
+  font-family: Releway-Bold, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 5em;
+  margin-top: 0px;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  color: #FFBB89;
+  font-size: 3em;
+}
+
+.game-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  height: 175px;
+  width: 125px;
+}
+
+.card-face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-width: 2px;
+  border-style: solid;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+}
+
+.card.visible .card-back {
+  transform: rotateY(-180deg); 
+}
+
+.card.visible .card-front {
+  transform: rotateY(0); 
+}
+
+.card.matched .card-front .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.card-back {
+  background-color: rgb(245, 52, 52);
+  border-color: white;
+  transform: rotateY(0); 
+}
+
+.cob-web {
+  position: absolute;
+  transition: width 100ms ease-in-out, height 100ms ease-in-out;
+  width: 47px;
+  height: 47px;
+}
+
+.card-face:hover .cob-web {
+  width: 52px;
+  height: 52px;
+}
+
+.cob-web-top-left {
+  transform: rotate(270deg);
+  top: 0;
+  left: 0;
+}
+
+.cob-web-top-right {
+  top: 0;
+  right: 0;
+}
+
+.cob-web-bottom-left {
+  transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+}
+
+.cob-web-bottom-right {
+  transform: rotate(90deg);
+  bottom: 0;
+  right: 0;
+}
+
+.spider {
+  align-self: center;
+  transition: transform 100ms ease-in-out;
+  transform: translateY(-10px);
+}
+
+.card-back:hover .spider {
+  transform: translateY(0);
+}
+
+.card-value {
+  position: relative;
+  transition: transform 100ms ease-in-out;
+  transform: scale(.9);
+}
+
+.card-front:hover .card-value {
+  transform: scale(1);
+}
+
+.card-front {
+  background-color: white;
+  border-color: #FF6D00;
+  transform: rotateY(180deg);
+}
+
+.overlay-text {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(20, 134, 241);
+  font-family: Releway-Bold, serif;
+}
+
+.overlay-text-small {
+  font-size: .3em;
+}
+
+.overlay-text.visible {
+  display: flex;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: rotate(0)
+  }
+  25% {
+    transform: rotate(-30deg)
+  }
+  75% {
+    transform: rotate(30deg)
+  }
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: none;
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 700px) {
+  .game-container {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 100px;
+
+  }
+
+  .game-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-title{
+    font-size: 3em;
+  }
+  .game-info{
+    font-size: 2em;
+  }
+  .overlay-text{
+    font-size: 1em;
+  }
+  .card {
+    height: 110px;
+    width: 90px;
+  }
+  .game-container .card-front img{
+    height: 75%;
+    width: 75%;
+  }
+  #home{
+    width: 50px;
+    height: 50px;
+  }
+  .fas{
+    font-size: 30px;
+  }
+}

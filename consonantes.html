@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://kit.fontawesome.com/c66809f49c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/consonantes.css">
+    <title>Repasa las Consonantes</title>
+</head>
+<body>
+    <div id="vertical"></div>
+    <div>
+        <button id="home" class="fas fa-home" onclick=window.location.href='index.html'></button> 
+    </div>
+    <h1 class="page-title">Repasa las Consonantes</h1>
+    <div class="overlay-text visible">
+        <button class="button1">Aprender</button> 
+    </div>
+    <div id="victory-text" class="overlay-text">
+        ¡Lo hiciste! 
+        <span class="overlay-text-small"> 
+          <button id="recargar" class="fas fa-undo-alt" onclick="location.href = location.href"></button>
+        </span>
+    </div>
+    
+    <div class="container">
+        
+        <div class="slide-container">
+            <div class="slide active">
+                <img  src="imagenes/portada.fw.png" alt="">    
+            </div>
+            <div class="slide">
+                <img src="imagenes/letrab.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letrac.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letrad.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letraf.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letrag.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letrah.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letraj.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letrak.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letral.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letram.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letran.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/letrap.fw.png" alt="">
+            </div>    
+            <div class="slide">
+                <img src="imagenes/letraq.fw.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="imagenes/letrar.fw.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="imagenes/letras.fw.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="imagenes/letrat.fw.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="imagenes/letrav.fw.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="imagenes/letraw.fw.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="imagenes/letrax.fw.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="imagenes/letray.fw.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="imagenes/letraz.fw.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="imagenes/fin.fw.png" alt="">
+            </div> 
+
+        </div>
+        <div id="prev" class="fas fa-arrow-left"></div>
+        <div id="next" class="fas fa-arrow-right"></div>
+    </div>
+
+
+<script type="text/javascript">
+        
+    $(document).ready(function(){
+
+/*    $('#prev').click(function c(){
+        $('.container').find('.active').prev().addClass('active');
+        $('.container').find('.active').next().removeClass('active');
+    });
+*/
+    $('#next').click(function a(){
+        $('.container').find('.active').prev().removeClass('active');
+        $('.container').find('.active').next().addClass('active');
+
+        flip();   
+    });
+    });
+
+    function flip(){
+        var audio = new Audio ('audio/flip.wav');
+        audio.play();
+    };
+
+
+</script>
+ 
+    <script src="js/jquery.js" async></script>
+    <script src="js/sonidos.js" async></script>
+    <script src="js/scriptcons.js"></script>
+</body>
+</html>
