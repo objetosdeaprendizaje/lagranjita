@@ -1,3 +1,4 @@
+$(document).ready(function(){
 
 var victoria = document.getElementById("victory-text");
 var contando = document.getElementById("next");
@@ -73,23 +74,9 @@ var counter = 0;
         else if(counter ==22){
             final();
             victoria.classList.add('visible');
-            stopMusic();
         }
     }
-/*
-function countingClicks(){
-    document.getElementById("next").innerHTML = ++counter;
-    if(counter == 1){
-        b();
-    }
-    else if(counter == 2){
-        c();
-    }
-    
-    
-}
 
-*/
 
 function b(){
     var audio = new Audio ('audio/letra-b.mp3');
@@ -187,6 +174,9 @@ function final(){
     audio.play();
    
 };
+
+});
+
 
 
 

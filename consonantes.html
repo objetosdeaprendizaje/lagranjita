@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/c66809f49c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/consonantes.css">
     <title>Repasa las Consonantes</title>
@@ -33,67 +33,67 @@
                 <img  src="imagenes/portada.png" alt="">    
             </div>
             <div class="slide">
-                <img src="imagenes/letrab.png" alt="">
+                <img src="imagenes/letrab.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letrac.png" alt="">
+                <img src="imagenes/letrac.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letrad.png" alt="">
+                <img src="imagenes/letrad.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letraf.png" alt="">
+                <img src="imagenes/letraf.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letrag.png" alt="">
+                <img src="imagenes/letrag.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letrah.png" alt="">
+                <img src="imagenes/letrah.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letraj.png" alt="">
+                <img src="imagenes/letraj.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letrak.png" alt="">
+                <img src="imagenes/letrak.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letral.png" alt="">
+                <img src="imagenes/letral.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letram.png" alt="">
+                <img src="imagenes/letram.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letran.png" alt="">
+                <img src="imagenes/letran.fw.png" alt="">
             </div>  
             <div class="slide">
-                <img src="imagenes/letrap.png" alt="">
+                <img src="imagenes/letrap.fw.png" alt="">
             </div>    
             <div class="slide">
-                <img src="imagenes/letraq.png" alt="">
+                <img src="imagenes/letraq.fw.png" alt="">
             </div> 
             <div class="slide">
-                <img src="imagenes/letrar.png" alt="">
+                <img src="imagenes/letrar.fw.png" alt="">
             </div> 
             <div class="slide">
-                <img src="imagenes/letras.png" alt="">
+                <img src="imagenes/letras.fw.png" alt="">
             </div> 
             <div class="slide">
-                <img src="imagenes/letrat.png" alt="">
+                <img src="imagenes/letrat.fw.png" alt="">
             </div> 
             <div class="slide">
-                <img src="imagenes/letrav.png" alt="">
+                <img src="imagenes/letrav.fw.png" alt="">
             </div> 
             <div class="slide">
-                <img src="imagenes/letraw.png" alt="">
+                <img src="imagenes/letraw.fw.png" alt="">
             </div> 
             <div class="slide">
-                <img src="imagenes/letrax.png" alt="">
+                <img src="imagenes/letrax.fw.png" alt="">
             </div> 
             <div class="slide">
-                <img src="imagenes/letray.png" alt="">
+                <img src="imagenes/letray.fw.png" alt="">
             </div> 
             <div class="slide">
-                <img src="imagenes/letraz.png" alt="">
+                <img src="imagenes/letraz.fw.png" alt="">
             </div> 
             <div class="slide">
                 <img src="imagenes/fin.png" alt="">
@@ -109,29 +109,27 @@
         
     $(document).ready(function(){
 
-/*    $('#prev').click(function c(){
+        /*    $('#prev').click(function c(){
         $('.container').find('.active').prev().addClass('active');
         $('.container').find('.active').next().removeClass('active');
-    });
-*/
-    $('#next').click(function a(){
+        });
+        */
+        $('#next').click(function a(){
         $('.container').find('.active').prev().removeClass('active');
         $('.container').find('.active').next().addClass('active');
 
         flip();   
     });
     });
-
+  
     function flip(){
         var audio = new Audio ('audio/flip.wav');
         audio.play();
     };
 
-
 </script>
  
-    <script src="js/jquery.js" async></script>
     <script src="js/sonidos.js" async></script>
-    <script src="js/scriptcons.js"></script>
+    <script src="js/scriptcons.js" async></script>
 </body>
 </html>
