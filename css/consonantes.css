@@ -6,7 +6,7 @@
 body{
     margin: 0;
     height: 100vh;
-    background: url("../imagenes/landscape-922581_1920\ -\ copia.png") no-repeat center;
+    background: url("../imagenes/fondo-1.png") no-repeat center;
     cursor: pointer;
    /* display: flex;
     align-items: center;
@@ -201,7 +201,7 @@ body{
         width: 100%;
         height: 100vh;
         z-index: 1;
-        background: url(../imagenes/vertical2.fw.png);
+        background: url(../imagenes/vertical.png);
         background-size: cover;
         background-position: center;
     }
@@ -210,11 +210,10 @@ body{
     .container{
         height: 200px; 
         width: 500px;
-        margin: 30px auto;
+        margin: 15px auto;
     }
     .page-title{
-        font-size: 3em;
-        margin-top: 0px;
+        display: none;
     }
     .button1{
         width: 180px;
