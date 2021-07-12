@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c66809f49c.js" crossorigin="anonymous"></script>
   <link href="css/vocales.css" rel="stylesheet">
+  <script src="js/script.js" async></script>
   <script src="js/vocales.js" async></script>
   <title>Repasa las Vocales</title>
 </head>
@@ -43,7 +44,7 @@
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img id="a" class="spider" src="imagenes/Spider.png">
+        <img class="spider a" src="imagenes/Spider.png">
       </div>
     <div class="card-front card-face">
         <img  class="card-value" src="imagenes/Bat.png">
@@ -51,7 +52,7 @@
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img id="a1" class="spider" src="imagenes/Spider.png">
+        <img class="spider a" src="imagenes/Spider.png">
       </div>
       <div  class="card-front card-face">
         <img class="card-value" src="imagenes/Bat.png">
@@ -59,7 +60,7 @@
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img id="i" class="spider" src="imagenes/Spider.png">
+        <img class="spider i" src="imagenes/Spider.png">
       </div>
       <div class="card-front card-face">
         <img class="card-value" src="imagenes/Bones.png">
@@ -67,7 +68,7 @@
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img  id="i1" class="spider" src="imagenes/Spider.png">
+        <img class="spider i" src="imagenes/Spider.png">
       </div>
       <div class="card-front card-face">
         <img class="card-value" src="imagenes/Bones.png">
@@ -75,7 +76,7 @@
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img id="e" class="spider" src="imagenes/Spider.png">
+        <img class="spider e" src="imagenes/Spider.png">
       </div>
       <div class="card-front card-face">
         <img class="card-value" src="imagenes/Cauldron.png">
@@ -83,7 +84,7 @@
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img id="e1" class="spider" src="imagenes/Spider.png">
+        <img class="spider e" src="imagenes/Spider.png">
       </div>
       <div class="card-front card-face">
         <img class="card-value" src="imagenes/Cauldron.png">
@@ -91,7 +92,7 @@
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img id="u" class="spider" src="imagenes/Spider.png">
+        <img class="spider u" src="imagenes/Spider.png">
       </div>
       <div class="card-front card-face">
         <img class="card-value" src="imagenes/Eye.png">
@@ -99,7 +100,7 @@
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img id="u1" class="spider" src="imagenes/Spider.png">
+        <img class="spider u" src="imagenes/Spider.png">
       </div>
       <div class="card-front card-face">
         <img class="card-value" src="imagenes/Eye.png">
@@ -107,7 +108,7 @@
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img id="o" class="spider" src="imagenes/Spider.png">
+        <img class="spider o" src="imagenes/Spider.png">
       </div>
       <div class="card-front card-face">
         <img class="card-value" src="imagenes/skull.png">
@@ -115,7 +116,7 @@
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img id="o1" class="spider" src="imagenes/Spider.png">
+        <img class="spider o" src="imagenes/Spider.png">
       </div>
       <div class="card-front card-face">
         <img class="card-value" src="imagenes/skull.png">
@@ -125,67 +126,21 @@
     </div>
   </div>
 
-<script>
-  
-    function a(){
-        var audio = new Audio ('audio/a.mp3');
-        audio.play();
-    };
-    document.getElementById("a").onclick = function(){
-        a();
-    }
-    document.getElementById("a1").onclick = function(){
-        a();
-    }
-  
-    function e(){
-        var audio = new Audio ('audio/e.mp3');
-        audio.play();
-    };
-    document.getElementById("e").onclick = function(){
-        e();
-    }
-    document.getElementById("e1").onclick = function(){
-        e();
-    } 
-
-    function i(){
-        var audio = new Audio ('audio/i.mp3');
-        audio.play();
-    };
-    document.getElementById("i").onclick = function(){
-        i();
-    }
-    document.getElementById("i1").onclick = function(){
-        i();
-    }
-
-    
-    function o(){
-        var audio = new Audio ('audio/o.mp3');
-        audio.play();
-    };
-    document.getElementById("o").onclick = function(){
-        o();
-    }
-    document.getElementById("o1").onclick = function(){
-        o();
-    } 
-
-
-    function u(){
-        var audio = new Audio ('audio/u.mp3');
-        audio.play();
-    };
-    document.getElementById("u").onclick = function(){
-        u();
-    }
-    document.getElementById("u1").onclick = function(){
-        u();
-    } 
-
-</script>
-
+  <audio preload="auto" class="audio-a">
+    <source src="audio/a.mp3">
+  </audio>
+  <audio preload="auto" class="audio-e">
+    <source src="audio/e.mp3">
+  </audio>
+  <audio preload="auto" class="audio-i">
+    <source src="audio/i.mp3">
+  </audio>
+  <audio preload="auto" class="audio-o">
+    <source src="audio/o.mp3">
+  </audio>
+  <audio preload="auto" class="audio-u">
+    <source src="audio/u.mp3">
+  </audio>
 
 </body>
 </html>
