@@ -8,9 +8,6 @@ body{
     height: 100vh;
     background: url("../imagenes/fondo-1.png") no-repeat center;
     cursor: pointer;
-   /* display: flex;
-    align-items: center;
-    justify-content: center;*/
 }
 .container{
     height: 400px; 
@@ -208,9 +205,9 @@ body{
 }
 @media (max-width: 850px){
     .container{
-        height: 200px; 
+        height: 300px; 
         width: 500px;
-        margin: 15px auto;
+        margin: 0px auto;
     }
     .page-title{
         display: none;
