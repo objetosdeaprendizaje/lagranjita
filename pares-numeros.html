@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c66809f49c.js" crossorigin="anonymous"></script>
+  <link href="css/vocales.css" rel="stylesheet">
+  <script src="js/script.js" async></script>
+  <script src="js/numeros.js" async></script>
+  <title>Repasa los Números</title>
+</head>
+<body> 
+  
+  <div>
+    <button id="home" class="fas fa-home" onclick=window.location.href='index.html'></button> 
+  </div>
+  <h1 class="page-title">Repasa los Números</h1>
+  <div class="overlay-text visible">
+    <button class="button1">Jugar</button> 
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    ¡Perdiste!
+    <span class="overlay-text-small">
+      <button class="button2"><i class="fas fa-undo-alt"></i></button>
+    </span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    ¡Ganaste! 
+    <span class="overlay-text-small"> 
+      <button class="button2"><i class="fas fa-undo-alt"></i></button>
+    </span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Tiempo <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+          Intentos <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="spider uno" src="imagenes/interrogacion3.fw.png">
+      </div>
+    <div class="card-front card-face">
+        <img  class="card-value" src="imagenes/uno.fw.png">
+    </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="spider uno" src="imagenes/interrogacion3.fw.png">
+      </div>
+      <div  class="card-front card-face">
+        <img class="card-value" src="imagenes/uno.fw.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="spider dos" src="imagenes/interrogacion3.fw.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="imagenes/dos.fw.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="spider dos" src="imagenes/interrogacion3.fw.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="imagenes/dos.fw.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="spider tres" src="imagenes/interrogacion3.fw.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="imagenes/tres.fw.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="spider tres" src="imagenes/interrogacion3.fw.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="imagenes/tres.fw.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="spider cuatro" src="imagenes/interrogacion3.fw.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="imagenes/cuatro.fw.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="spider cuatro" src="imagenes/interrogacion3.fw.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="imagenes/cuatro.fw.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="spider cinco" src="imagenes/interrogacion3.fw.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="imagenes/cinco.fw.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="spider cinco" src="imagenes/interrogacion3.fw.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="imagenes/cinco.fw.png">
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+          <img class="spider seis" src="imagenes/interrogacion3.fw.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="imagenes/seis.fw.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="spider seis" src="imagenes/interrogacion3.fw.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="imagenes/seis.fw.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="spider siete" src="imagenes/interrogacion3.fw.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="imagenes/siete.fw.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="spider siete" src="imagenes/interrogacion3.fw.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="imagenes/siete.fw.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="spider ocho" src="imagenes/interrogacion3.fw.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="imagenes/ocho.fw.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="spider ocho" src="imagenes/interrogacion3.fw.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="imagenes/ocho.fw.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="spider nueve" src="imagenes/interrogacion3.fw.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="imagenes/nueve.fw.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="spider nueve" src="imagenes/interrogacion3.fw.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="imagenes/nueve.fw.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="spider diez" src="imagenes/interrogacion3.fw.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="imagenes/diez.fw.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="spider diez" src="imagenes/interrogacion3.fw.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="imagenes/diez.fw.png">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <audio preload="auto" class="audio-one">
+    <source src="audio/one.mp3">
+  </audio>
+  <audio preload="auto" class="audio-two">
+    <source src="audio/two.mp3">
+  </audio>
+  <audio preload="auto" class="audio-three">
+    <source src="audio/three.mp3">
+  </audio>
+  <audio preload="auto" class="audio-four">
+    <source src="audio/four.mp3">
+  </audio>
+  <audio preload="auto" class="audio-five">
+    <source src="audio/five.mp3">
+  </audio>
+  <audio preload="auto" class="audio-six">
+    <source src="audio/six.mp3">
+  </audio>
+  <audio preload="auto" class="audio-seven">
+    <source src="audio/seven.mp3">
+  </audio>
+  <audio preload="auto" class="audio-eight">
+    <source src="audio/eight.mp3">
+  </audio>
+  <audio preload="auto" class="audio-nine">
+    <source src="audio/nine.mp3">
+  </audio>
+  <audio preload="auto" class="audio-ten">
+    <source src="audio/ten.mp3">
+  </audio>
+<style>
+  .card-back {
+    background-color: rgb(245, 248, 45);
+    border-color: white;
+    transform: rotateY(0); 
+    }
+ .button1{
+  background: rgb(0, 110, 255);
+  width: 230px;
+  height: 100px;
+  color: white;
+  border: 10px solid rgb(248, 23, 7);
+  border-radius: 40px;
+  box-shadow: 5px 5px rgb(255, 39, 32);
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  margin-top: 50px;
+ }
+ .game-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 500px;
+}
+@media (max-width: 700px) {
+  .game-container {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 100px;
+
+  }
+}
+</style>
+
+</body>
+</html>
