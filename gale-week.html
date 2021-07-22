@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/c66809f49c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/consonantes.css">
+    <title>Repasa los Días de la Semana</title>
+</head>
+<body>
+    <div id="vertical"></div>
+    <div>
+        <button id="home" class="fas fa-home" onclick=window.location.href='index.html'></button> 
+    </div>
+    <h1 class="page-title">Repasa los Días de <br> la Semana</h1>
+    <div class="overlay-text visible">
+        <button class="button1">Aprender</button> 
+    </div>
+    <div id="victory-text" class="overlay-text">
+        ¡Lo hiciste! 
+        <span class="overlay-text-small"> 
+          <button id="recargar" class="fas fa-undo-alt" onclick="location.href = location.href"></button>
+        </span>
+    </div>
+    
+    <div class="container">
+        
+        <div class="slide-container">
+            <div class="slide active">
+                <img  src="imagenes/portada-week.fw.png" alt="">    
+            </div>
+            <div class="slide">
+                <img src="imagenes/monday.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/tuesday.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/wednesday.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/thursday.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/friday.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/saturday.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/sunday.fw.png" alt="">
+            </div>  
+            <div class="slide">
+                <img src="imagenes/fin.png" alt="">
+            </div> 
+
+        </div>
+        <div id="prev" class="fas fa-arrow-left"></div>
+        <div id="next" class="fas fa-arrow-right"></div>
+    </div>
+
+         <audio preload="auto" class="audio-lunes">
+            <source src="audio/monday.mp3">
+        </audio>
+        <audio preload="auto" class="audio-martes">
+            <source src="audio/tuesday.mp3">
+        </audio>
+        <audio preload="auto" class="audio-miercoles">
+            <source src="audio/wednesday.mp3">
+        </audio>
+        <audio preload="auto" class="audio-jueves">
+            <source src="audio/thursday.mp3">
+        </audio>
+        <audio preload="auto" class="audio-viernes">
+            <source src="audio/friday.mp3">
+        </audio>
+        <audio preload="auto" class="audio-sabado">
+            <source src="audio/saturday.mp3">
+        </audio>
+        <audio preload="auto" class="audio-domingo">
+            <source src="audio/sunday.mp3">
+        </audio>
+        <audio preload="auto" class="audio-flip">
+            <source src="audio/flip.wav">
+        </audio>
+        <audio preload="auto" class="audio-final">
+            <source src="audio/victory.wav">
+        </audio>
+
+<script type="text/javascript">
+        
+    $(document).ready(function(){
+
+        $('#next').click(function a(){
+        $('.container').find('.active').prev().removeClass('active');
+        $('.container').find('.active').next().addClass('active');
+
+        flip();   
+    });
+    });
+  
+    function flip(){
+        var audio = new Audio ('audio/flip.wav');
+        audio.play();
+    };
+
+</script>
+ 
+    <script src="js/scriptcons.js" async></script>
+    <script src="js/gale-week.js" async></script>
+</body>
+</html>

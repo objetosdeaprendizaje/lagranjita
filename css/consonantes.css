@@ -182,6 +182,7 @@ body{
     display: none;
 }
 
+
 @media all and (orientation: portrait){
     .container{
         display: none;
