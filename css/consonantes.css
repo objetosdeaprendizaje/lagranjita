@@ -6,7 +6,7 @@
 body{
     margin: 0;
     height: 100vh;
-    background: url("../imagenes/fondo-1.png") no-repeat center;
+    background: url("../imagenes/") no-repeat center;
     cursor: pointer;
 }
 .container{
@@ -202,6 +202,7 @@ body{
         background: url(../imagenes/vertical.png);
         background-size: cover;
         background-position: center;
+        
     }
 }
 @media (max-width: 850px){
