@@ -24,13 +24,13 @@ function checkInputs(){
     const sieteValue = siete.value;
 
    
-    if(unoValue === '2'){
+    if(unoValue === '1'){
         setSuccessFor(uno);
     } else{
         setErrorFor(uno);
     }
     
-    if(dosValue === '5'){
+    if(dosValue === '4'){
         setSuccessFor(dos);
     } else{
         setErrorFor(dos);
@@ -42,13 +42,13 @@ function checkInputs(){
         setErrorFor(tres);
     }
 
-    if(cuatroValue === '4'){
+    if(cuatroValue === '5'){
         setSuccessFor(cuatro);
     } else{
         setErrorFor(cuatro);
     }
     
-    if(cincoValue === '1'){
+    if(cincoValue === '3'){
         setSuccessFor(cinco);
     } else{
         setErrorFor(cinco);
@@ -60,7 +60,7 @@ function checkInputs(){
         setErrorFor(seis);
     }
      
-    if(sieteValue === '3'){
+    if(sieteValue === '2'){
         setSuccessFor(siete);
     } else{
         setErrorFor(siete);

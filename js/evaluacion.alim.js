@@ -30,37 +30,37 @@ function checkInputs(){
         setErrorFor(uno);
     }
     
-    if(dosValue === '5'){
+    if(dosValue === '6'){
         setSuccessFor(dos);
     } else{
         setErrorFor(dos);
     }
 
-    if(tresValue === '6'){
+    if(tresValue === '3'){
         setSuccessFor(tres);
     } else{
         setErrorFor(tres);
     }
 
-    if(cuatroValue === '4'){
+    if(cuatroValue === '7'){
         setSuccessFor(cuatro);
     } else{
         setErrorFor(cuatro);
     }
     
-    if(cincoValue === '1'){
+    if(cincoValue === '4'){
         setSuccessFor(cinco);
     } else{
         setErrorFor(cinco);
     }
      
-    if(seisValue === '7'){
+    if(seisValue === '1'){
         setSuccessFor(seis);
     } else{
         setErrorFor(seis);
     }
      
-    if(sieteValue === '3'){
+    if(sieteValue === '5'){
         setSuccessFor(siete);
     } else{
         setErrorFor(siete);

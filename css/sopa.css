@@ -1,0 +1,197 @@
+/**
+* Wordfind.js 0.0.1
+* (c) 2012 Bill, BunKat LLC.
+* Wordfind is freely distributable under the MIT license.
+* For all details and documentation:
+*     http://github.com/bunkat/wordfind
+*/
+
+body{
+  background: url("../imagenes/fondo-1.png") no-repeat center;
+  height: auto;
+}
+
+p {
+    font: 22pt sans-serif;
+    margin: 20px 20px 0px 20px;
+}
+.page-title {
+  margin-top: 0px;
+  color: rgb(20, 134, 241);
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 5em;
+}
+.overlay-text {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(20, 134, 241);
+  font-family: 'Raleway', sans-serif;
+  font-size: 5em;
+}
+.overlay-text-small {
+  font-size: .3em;
+}
+.overlay-text.visible {
+display: flex;
+animation: overlay-grow 500ms forwards;
+}
+.button1{
+  background: rgb(78, 149, 241);
+  width: 260px;
+  height: 100px;
+  color: white;
+  border: 10px solid rgb(238, 59, 28);
+  border-radius: 40px;
+  box-shadow: 5px 5px rgb(252, 60, 27);
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+#recargar{
+  background: rgb(255, 255, 0);
+  border-radius: 50%;
+  border: 3px solid rgb(238, 59, 28);
+  color: white;
+  width: 80px;
+  height: 80px;
+}
+#home{
+  background: rgb(53, 135, 243);
+  color: white;
+  border: 3px solid rgb(6, 171, 236);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.fas{
+  font-size: 50px;
+}
+  #juego {
+    background: url('../imagenes/fondo2.fw.png') center no-repeat;
+    padding: 20px;
+    width: 800px;
+    height: 355px;
+    margin: 30px 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+.img{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+  
+  #juego div {
+    width: 100%;
+    margin: 0 auto;  
+  }
+  
+  /* style for each square in the puzzle */
+  #juego .puzzleSquare {
+    height: 50px;
+    width: 50px;
+    text-transform: uppercase;
+    background: white;
+    border: 0;
+    font: 1em sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  button::-moz-focus-inner {
+    border: 0;
+  }
+  
+  /* indicates when a square has been selected */
+  #juego .selected {
+    background-color: #F8D212;
+  }
+  
+  /* indicates that the square is part of a word that has been found */ 
+  #juego .found {
+    background-color: red;
+    color: white;
+  }
+  
+  #juego .solved {
+    background-color: red;
+    color: white;
+  }
+  
+  /* indicates that all words have been found */
+  #juego .complete {
+    background-color: red;
+  }
+  
+  /**
+  * Styles for the word list
+  */
+  #Palabras {
+    padding-top: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-style: dashed;
+    border-color: rgb(0, 140, 255);
+    border-width: 3px;
+  }
+  
+  #Palabras ul {
+    list-style-type: none;
+    padding-top: 0px;
+  }
+  
+  #Palabras li {
+    padding: 0px 0;
+    font: 1em sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* indicates that the word has been found */
+  #Palabras .wordFound {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  /**
+  * Styles for the button
+  */
+  #solve {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(78, 149, 241);
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: 2px solid rgb(238, 59, 28);
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+  }

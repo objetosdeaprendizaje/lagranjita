@@ -3,9 +3,6 @@ var uno = document.getElementById('uno');
 const dos = document.getElementById('dos');
 const tres = document.getElementById('tres');
 const cuatro = document.getElementById('cuatro');
-const cinco = document.getElementById('cinco');
-const seis = document.getElementById('seis');
-const siete = document.getElementById('siete');
 
 
 form.addEventListener('submit', (e) =>{
@@ -19,10 +16,7 @@ function checkInputs(){
     const dosValue = dos.value;
     const tresValue = tres.value;
     const cuatroValue = cuatro.value;
-    const cincoValue = cinco.value;
-    const seisValue = seis.value;
-    const sieteValue = siete.value;
-
+    
    
     if(unoValue === '2'){
         setSuccessFor(uno);
@@ -30,40 +24,22 @@ function checkInputs(){
         setErrorFor(uno);
     }
     
-    if(dosValue === '5'){
+    if(dosValue === '1'){
         setSuccessFor(dos);
     } else{
         setErrorFor(dos);
     }
 
-    if(tresValue === '6'){
+    if(tresValue === '4'){
         setSuccessFor(tres);
     } else{
         setErrorFor(tres);
     }
 
-    if(cuatroValue === '4'){
+    if(cuatroValue === '3'){
         setSuccessFor(cuatro);
     } else{
         setErrorFor(cuatro);
-    }
-    
-    if(cincoValue === '1'){
-        setSuccessFor(cinco);
-    } else{
-        setErrorFor(cinco);
-    }
-     
-    if(seisValue === '7'){
-        setSuccessFor(seis);
-    } else{
-        setErrorFor(seis);
-    }
-     
-    if(sieteValue === '3'){
-        setSuccessFor(siete);
-    } else{
-        setErrorFor(siete);
     }
 }
 function setErrorFor(input){

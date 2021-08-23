@@ -24,43 +24,43 @@ function checkInputs(){
     const sieteValue = siete.value;
 
    
-    if(unoValue === '2'){
+    if(unoValue === '1'){
         setSuccessFor(uno);
     } else{
         setErrorFor(uno);
     }
     
-    if(dosValue === '5'){
+    if(dosValue === '3'){
         setSuccessFor(dos);
     } else{
         setErrorFor(dos);
     }
 
-    if(tresValue === '6'){
+    if(tresValue === '7'){
         setSuccessFor(tres);
     } else{
         setErrorFor(tres);
     }
 
-    if(cuatroValue === '4'){
+    if(cuatroValue === '2'){
         setSuccessFor(cuatro);
     } else{
         setErrorFor(cuatro);
     }
     
-    if(cincoValue === '1'){
+    if(cincoValue === '4'){
         setSuccessFor(cinco);
     } else{
         setErrorFor(cinco);
     }
      
-    if(seisValue === '7'){
+    if(seisValue === '5'){
         setSuccessFor(seis);
     } else{
         setErrorFor(seis);
     }
      
-    if(sieteValue === '3'){
+    if(sieteValue === '6'){
         setSuccessFor(siete);
     } else{
         setErrorFor(siete);

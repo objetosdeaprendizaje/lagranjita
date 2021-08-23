@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sopa de letras</title>
+  
+    <link rel="stylesheet" type="text/css" href="css/sopa.css">
+    <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+    <script src="https://kit.fontawesome.com/c66809f49c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/wordfind.js"></script> 
+    <script type="text/javascript" src="js/wordfindgame.js"></script> 
+</head>
+<body>
+    <div>
+      <button id="home" class="fas fa-home" onclick=window.location.href='index.html'></button> 
+    </div>
+    <h1 class="page-title">Sopa de Letras <br> Familia</h1>
+    <div class="overlay-text visible">
+      <button class="button1">Jugar</button> 
+    </div>
+    <div id="victory-text" class="overlay-text">
+      ¡Lo hiciste! 
+      <span class="overlay-text-small"> 
+        <button id="recargar" class="fas fa-undo-alt" onclick="location.href = location.href"></button>
+      </span>
+    </div>
+    <div id="derrota-text" class="overlay-text">
+      ¡Perdiste! 
+      <span class="overlay-text-small"> 
+        <button id="recargar" class="fas fa-undo-alt" onclick="location.href = location.href"></button>
+      </span>
+    </div>
+    <div id='juego'></div>
+
+    <div id='Palabras'></div>
+    
+    <div><button id='solve'>Resolver el juego</button></div>
+    <audio preload="auto" class="audio-final">
+      <source src="audio/victory.wav">
+    </audio>
+    <audio preload="auto" class="derrota">
+      <source src="audio/gameOver.wav">
+    </audio>
+    <script>
+    var words = ['cousin','mother','son','daugter','father','uncle'];
+    var gamePuzzle = wordfindgame.create(words, '#juego', '#Palabras'); 
+        
+    var puzzle = wordfind.newPuzzle(words,{height: 18, width:18, fillBlanks: false});
+    wordfind.print(puzzle);   
+        
+    $('#solve').click( function() {wordfindgame.solve(gamePuzzle, words);});
+        
+    </script>
+     <script src="js/jquery.js" async></script>
+     <script src="js/script.js"></script>
+    
+</body>
+</html>
