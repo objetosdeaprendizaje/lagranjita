@@ -15,7 +15,7 @@
     <div>
       <button id="home" class="fas fa-home" onclick=window.location.href='index.html'></button> 
     </div>
-    <h1 class="page-title">Sopa de Letras <br> Familia</h1>
+    <h1 class="page-title">Sopa de Letras <br>Estaciones del Año</h1>
     <div class="overlay-text visible">
       <button class="button1">Jugar</button> 
     </div>
@@ -42,11 +42,42 @@
     <audio preload="auto" class="derrota">
       <source src="audio/gameOver.wav">
     </audio>
+    <style>
+         #Palabras {
+            margin-top: 20px;
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+        #juego .puzzleSquare {
+            height: 50px;
+            width: 50px;
+        }
+        #juego{
+            background: url('imagenes/fondo-estaciones.fw.png') center no-repeat;
+        }
+        @media all and (orientation: portrait){
+        #juego{
+            background: none;
+            width: 355px;
+            height: 225px;
+            padding: 0px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+         #juego .puzzleSquare {
+            height: 40px;
+            width: 40px;
+        }
+      }
+    </style>
+
     <script>
-    var words = ['cousin','mother','son','daugter','father','uncle'];
+    var words = ['spring','summer','autumn','winter'];
     var gamePuzzle = wordfindgame.create(words, '#juego', '#Palabras'); 
         
-    var puzzle = wordfind.newPuzzle(words,{height: 18, width:18, fillBlanks: false});
+    var puzzle = wordfind.newPuzzle(words,{height: 18, width: 18, fillBlanks: false});
     wordfind.print(puzzle);   
         
     $('#solve').click( function() {wordfindgame.solve(gamePuzzle, words);});

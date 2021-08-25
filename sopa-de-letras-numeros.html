@@ -15,7 +15,7 @@
     <div>
       <button id="home" class="fas fa-home" onclick=window.location.href='index.html'></button> 
     </div>
-    <h1 class="page-title">Sopa de Letras <br> Familia</h1>
+    <h1 class="page-title">Sopa de Letras <br>Números</h1>
     <div class="overlay-text visible">
       <button class="button1">Jugar</button> 
     </div>
@@ -42,8 +42,13 @@
     <audio preload="auto" class="derrota">
       <source src="audio/gameOver.wav">
     </audio>
+    <style>
+        #juego{
+        background: url('imagenes/fondo-numerosfw.fw.png') center no-repeat;
+        }
+    </style>
     <script>
-    var words = ['cousin','mother','son','daugter','father','uncle'];
+    var words = ['one','two','three','four','five','six','seven','eight','nine','ten'];
     var gamePuzzle = wordfindgame.create(words, '#juego', '#Palabras'); 
         
     var puzzle = wordfind.newPuzzle(words,{height: 18, width:18, fillBlanks: false});
