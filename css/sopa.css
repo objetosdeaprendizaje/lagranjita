@@ -16,7 +16,6 @@ html {
 }
 body{
   margin: 0;
-  overscroll-behavior: contain;
   background:  url("../imagenes/fondo-1.png") no-repeat center;
 }
 
