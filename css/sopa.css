@@ -15,6 +15,7 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 body{
+  overscroll-behavior: contain;
   margin: 0;
   background:  url("../imagenes/fondo-1.png") no-repeat center;
 }
