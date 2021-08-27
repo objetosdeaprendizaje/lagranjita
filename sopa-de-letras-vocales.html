@@ -15,7 +15,7 @@
     <div>
       <button id="home" class="fas fa-home" onclick=window.location.href='index.html'></button> 
     </div>
-    <h1 class="page-title">Sopa de Letras <br>Días de la Semana</h1>
+    <h1 class="page-title">Sopa de Letras <br>Vocales</h1>
     <div class="overlay-text visible">
       <button class="button1">Jugar</button> 
     </div>
@@ -54,11 +54,11 @@
             width: 35px;
         }
         #juego{
-            background: url('imagenes/fondo-week.fw.png') center no-repeat;
+            background: url('imagenes/fondo-vocales.fw.png') center no-repeat;
         }
         @media all and (orientation: portrait){
         #juego{
-            background: url('imagenes/fondo-week2.fw.png');
+            background: url('imagenes/fondo-vocales2.fw.png');
             width: 340px;
             height: 225px;
             padding: 0px;
@@ -78,7 +78,7 @@
     </style>
 
     <script>
-    var words = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+    var words = ['apple','elephant','island','orange','unicorn'];
     var gamePuzzle = wordfindgame.create(words, '#juego', '#Palabras'); 
         
     var puzzle = wordfind.newPuzzle(words,{height: 18, width: 18, fillBlanks: false});
