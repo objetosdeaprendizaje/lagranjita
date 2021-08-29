@@ -3,13 +3,11 @@
 }
 body{
     background: url("../imagenes/fondofinal.fw.png") no-repeat center;
-    height: 100%;
+    height: 100%
 }
 .general{
     top: 5px;
-    max-width: 865px;
-    height: 580px;
-    width: 45%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     flex-basis: 33%;
@@ -22,7 +20,8 @@ body{
     border-color: rgb(0, 140, 255);
     border-width: 3px;
     border-style: solid;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
+    
 }
 .texto{
     background-color: rgb(229, 255, 0);
@@ -40,22 +39,29 @@ body{
     
 }
 .parrafo{
-    margin-left: 360px; 
-    width: 50%; 
-    text-align: justify;   
+    margin-left: 290px; 
+    width: 30%;   
+    text-align: justify;
 }
 .derecha{
-    margin-left: 50px;
+    margin-left: 5px;
 }
 #box1{
     margin-top: 0px;
-    width: 400px;
+    width: 210px;
+    margin-left: 100px;
 }
 #box2{
-    width: 150px;
+    width: 50px;
     margin-top: 20px;
 }
-
+#box3{
+    background: url("../imagenes/globos.fw.png") no-repeat;
+    width: 200px;
+    height: 600px;
+    margin-top: 10px;
+    background: rgb(29, 87, 245);
+}
 #parrafo{
     text-align: justify;
     font-size: 24px;
@@ -73,7 +79,7 @@ body{
     color: black;
     background: white;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 155px;
     margin-left: 50px;
     font-family: 'Raleway', sans-serif;
     
@@ -89,13 +95,13 @@ body{
     margin-left: 10px;
 }
 .fas{
-    margin-top: 0px;
     font-size: 50px;
 }
 
 .container{
     display: flex;
-    
+    width: 50px;
+    height: 350px;    
 }
 .page-title {
     color: rgb(20, 134, 241);
@@ -110,10 +116,10 @@ body{
 }
 .form-control{
     width: 30px;
-    margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 35px;
+    padding-bottom: 70px;
     position: relative;
+
 }
 .form-control input{
     border: 3px solid rgb(7, 134, 253);
@@ -175,7 +181,7 @@ body{
         width: 100%;
         height: 100vh;
         z-index: 1;
-        background: url("../imagenes/vertical.png");
+        background: url(../img/vertical.png);
         background-size: cover;
         background-position: center;
         top: 0px;
@@ -183,6 +189,7 @@ body{
         right: 0px;
         bottom: 0px;
     }
+    
 }
 @media (max-width: 850px){
     
@@ -208,13 +215,11 @@ body{
     }
     .parrafo{
         margin-left: 90px; 
-        width: 45%;
-        text-align: justify;   
+        width: 80%;   
     }
     .general{
-        width: 70%
-    }   
-    .derecha{
-        margin-left: 20px;
-    }
+        top: 5px;
+        width: 70%;
+    }    
+
 }

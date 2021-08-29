@@ -221,6 +221,7 @@ margin-right: auto;
     }
   }
   @media all and (orientation: portrait){
+    
     #juego{
       background: none;
       width: 355px;
