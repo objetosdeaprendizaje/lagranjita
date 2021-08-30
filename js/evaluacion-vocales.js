@@ -48,18 +48,6 @@ function checkInputs(){
     } else{
         setErrorFor(cinco);
     }
-     
-    if(seisValue === '5'){
-        setSuccessFor(seis);
-    } else{
-        setErrorFor(seis);
-    }
-     
-    if(sieteValue === '6'){
-        setSuccessFor(siete);
-    } else{
-        setErrorFor(siete);
-    }
 }
 function setErrorFor(input){
     const formControl = input.parentElement;
