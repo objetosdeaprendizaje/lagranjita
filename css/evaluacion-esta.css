@@ -3,7 +3,7 @@
 }
 body{
     background: url("../imagenes/fondofinal.fw.png") no-repeat center;
-    height: 100vh;
+    height: 100%
 }
 .general{
     top: 5px;
@@ -178,9 +178,9 @@ body{
         display: block;
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         z-index: 1;
-        background: url(../img/vertical.png);
+        background: url("../imagenes/vertical.png");
         background-size: cover;
         background-position: center;
         top: 0px;
