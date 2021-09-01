@@ -16,9 +16,12 @@ body{
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 50px;
+    position: relative;
 }
 p{
     text-align: justify;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .page-title {
     margin-top: 70px;
@@ -42,4 +45,16 @@ p{
 }
 .fas{
     font-size: 50px;
+}
+@media (max-width: 850px){
+    .page-title {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 25px;
+        margin-left: 0px;
+    }
+    .contenido{
+        width: 70%;
+       
+    }
 }
